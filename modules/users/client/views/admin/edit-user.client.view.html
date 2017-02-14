@@ -6,16 +6,16 @@
     <form name="userForm" ng-submit="update(userForm.$valid)" novalidate>
       <fieldset>
         <div class="form-group" show-errors>
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" class="form-control" ng-model="user.firstName" placeholder="First Name" required />
-          <div ng-messages="userForm.firstName.$error" role="alert">
+          <label for="studentfirstName">First Name</label>
+          <input type="text" id="studentfirstName" name="studentfirstName" class="form-control" ng-model="user.studentfirstName" placeholder="First Name" required />
+          <div ng-messages="userForm.studentfirstName.$error" role="alert">
             <p class="help-block error-text" ng-message="required">First name is required.</p>
           </div>
         </div>
         <div class="form-group" show-errors>
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" class="form-control" ng-model="user.lastName" placeholder="Last Name" required />
-          <div ng-messages="userForm.lastName.$error" role="alert">
+          <label for="studentlastName">Last Name</label>
+          <input type="text" id="studentlastName" name="studentlastName" class="form-control" ng-model="user.studentlastName" placeholder="Last Name" required />
+          <div ng-messages="userForm.studentlastName.$error" role="alert">
             <p class="help-block error-text" ng-message="required">Last name is required.</p>
           </div>
         </div>

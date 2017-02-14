@@ -4,52 +4,30 @@
     <form name="userForm" ng-submit="signup(userForm.$valid)" class="signin" novalidate autocomplete="off">
       <fieldset>
         <div class="form-group" show-errors>
-          <label for="studentfirstName">Student Name</label>
-          <input type="text" id="studentfirstName" name="studentfirstName" class="form-control" ng-model="credentials.studentfirstName" placeholder="First Name" required>
-          <div ng-messages="userForm.studentfirstName.$error" role="alert">
+          <label for="parentfirstName">Parent First Name</label>
+          <input type="text" id="parentfirstName" name="parentfirstName" class="form-control" ng-model="credentials.parentfirstName" placeholder="First Name" required>
+          <div ng-messages="userForm.parentfirstName.$error" role="alert">
             <p class="help-block error-text" ng-message="required">First name is required.</p>
           </div>
         <div class="form-group" show-errors>
-          <label for="studentlastName"></label>
-          <input type="text" id="studentlastName" name="studentlastName" class="form-control" ng-model="credentials.studentlastName" placeholder="Last Name" required>
-          <div ng-messages="userForm.studentlastName.$error" role="alert">
+          <label for="parentlastName">Parent Last Name</label>
+          <input type="text" id="parentlastName" name="parentlastName" class="form-control" ng-model="credentials.parentlastName" placeholder="Last Name" required>
+          <div ng-messages="userForm.parentlastName.$error" role="alert">
             <p class="help-block error-text" ng-message="required">Last name is required.</p>
           </div>
         </div>
         </div>
         <div class="form-group" show-errors>
-          <label for="studentEmail">Student Email</label>
-          <input type="studentEmail" id="studentEmail" name="studentEmail" class="form-control" ng-model="credentials.studentEmail" placeholder="Student Email" lowercase required>
-          <div ng-messages="userForm.studentEmail.$error" role="alert">
+          <label for="children">Children</label>
+          <!--textarea better for entering child info? -->
+        </div>
+        <div class="form-group" show-errors>
+          <label for="parentEmail">Parent Email</label>
+          <input type="parentEmail" id="parentEmail" name="parentEmail" class="form-control" ng-model="credentials.parentEmail" placeholder="Parent Email" lowercase required>
+          <div ng-messages="userForm.parentEmail.$error" role="alert">
             <p class="help-block error-text" ng-message="required">Email address is required.</p>
-            <p class="help-block error-text" ng-message="studentEmail">Email address is invalid.</p>
+            <p class="help-block error-text" ng-message="parentEmail">Email address is invalid.</p>
           </div>
-        </div>
-        <div class="form-group" show-errors>
-          <label for="instrument">Instrument</label>
-          <br />
-          <select id="myOption">
-          <option value = "Violin">Violin</option>
-          <option value = "Cello">Cello</option>
-          <option value = "Viola">Viola</option>
-          </select>
-        </div>
-        <div class="form-group" show-errors>
-          <label for="age">Student Age</label>
-          <br />
-          <select id="myOption">
-          <option value = "3">3</option>
-          </select>
-        </div>
-        <div class="form-group" show-errors>
-          <label for="experience">Experience Level</label>
-          <br />
-          <select id="myOption">
-            <option>Toddler       (ages 3-5)</option>
-            <option>Beginner      (Twinkles-Book 2)</option>
-            <option>Intermediate  (Book 3-4)</option>
-            <option>Advanced      (Book 5-7)</option>
-          </select>
         </div>
         <div class="form-group" show-errors>
           <label for="username">Username</label>
