@@ -6,9 +6,9 @@
     <form name="userForm" ng-submit="update(userForm.$valid)" novalidate>
       <fieldset>
         <div class="form-group" show-errors>
-          <label for="studentfirstName">First Name</label>
-          <input type="text" id="studentfirstName" name="studentfirstName" class="form-control" ng-model="user.studentfirstName" placeholder="First Name" required />
-          <div ng-messages="userForm.studentfirstName.$error" role="alert">
+          <label for="displayName">First Name</label>
+          <input type="text" id="displayName" name="displayName" class="form-control" ng-model="user.displayName" placeholder="First Name" required />
+          <div ng-messages="userForm.displayName.$error" role="alert">
             <p class="help-block error-text" ng-message="required">First name is required.</p>
           </div>
         </div>

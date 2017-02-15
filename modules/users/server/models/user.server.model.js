@@ -35,39 +35,39 @@ var UserSchema = new Schema({
     validate: [validateLocalStrategyProperty, 'Please fill in your first name']
   },
 
-  studentlastName: {
-    type: String,
-    trim: true,
-    default: '',
-    validate: [validateLocalStrategyProperty, 'Please fill in your last name']
-  },
-  // displayName: {
+  // studentlastName: {
   //   type: String,
-  //   trim: true
+  //   trim: true,
+  //   default: '',
+  //   validate: [validateLocalStrategyProperty, 'Please fill in your last name']
   // },
-  email: {
-    type: String,
-    unique: true,
-    lowercase: true,
-    trim: true,
-    default: '',
-    validate: [validateLocalStrategyEmail, 'Please fill a valid email address']
-  },
-  instrument: {
-    type: String,
-    trim: true,
-    default: ''
-  },
-  studentage: {
-    type: Number,
-    trim: true,
-    default: ''
-  },
-  experience: {
-    type: String,
-    trim: true,
-    default: ''
-  },
+  // // displayName: {
+  // //   type: String,
+  // //   trim: true
+  // // },
+  // email: {
+  //   type: String,
+  //   unique: true,
+  //   lowercase: true,
+  //   trim: true,
+  //   default: '',
+  //   validate: [validateLocalStrategyEmail, 'Please fill a valid email address']
+  // },
+  // instrument: {
+  //   type: String,
+  //   trim: true,
+  //   default: ''
+  // },
+  // studentage: {
+  //   type: Number,
+  //   trim: true,
+  //   default: ''
+  // },
+  // experience: {
+  //   type: String,
+  //   trim: true,
+  //   default: ''
+  // },
   username: {
     type: String,
     unique: 'Username already exists',
