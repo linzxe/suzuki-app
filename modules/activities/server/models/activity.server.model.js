@@ -13,7 +13,7 @@ var ActivitySchema = new Schema({
   name: {
     type: String,
     default: '',
-    required: 'Please fill Activity name',
+    required: 'Please add Activity name',
     trim: true
   },
   description: {
@@ -25,7 +25,7 @@ var ActivitySchema = new Schema({
   teacher: {
     type: String,
     default: '',
-    required: 'Please add teacher',
+    required: 'Please add Teacher',
     trim: true
   },
   created: {
