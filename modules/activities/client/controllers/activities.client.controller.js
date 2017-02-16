@@ -17,7 +17,7 @@
     vm.form = {};
     vm.remove = remove;
     vm.save = save;
-    vm.department = TeachersService.query();
+    vm.teacher = TeachersService.query();
 
     // Remove existing Activity
     function remove() {

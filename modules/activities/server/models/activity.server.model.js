@@ -25,7 +25,7 @@ var ActivitySchema = new Schema({
   teacher: {
     type: String,
     default: '',
-    required: 'Please add Coordinator',
+    required: 'Please add teacher',
     trim: true
   },
   created: {

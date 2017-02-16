@@ -16,7 +16,7 @@
 
         <div class="form-group" show-errors>
           <label class="control-label" for="teacher">Teacher</label>
-          <select teacher="teacher" type="text" ng-options="item.name as item.name for item in vm.teachers" ng-model="vm.activity.teacher" id="teacher" class="form-control" placeholder="Teacher" required></select>
+          <select name="teacher" type="text" ng-options="teacher.name as teacher.name for teacher in vm.teacher" ng-model="vm.activity.teacher" id="name" class="form-control" placeholder="Teacher" required></select>
           <div ng-messages="vm.form.activityForm.teacher.$error" role="alert">
             <p class="help-block error-text" ng-message="required">Activity description is required.</p>
           </div>
