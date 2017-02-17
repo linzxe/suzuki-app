@@ -4,15 +4,15 @@
     <form name="userForm" ng-submit="signup(userForm.$valid)" class="signin" novalidate autocomplete="off">
       <fieldset>
         <div class="form-group" show-errors>
-          <label for="displayName">Student Name</label>
-          <input type="text" id="displayName" name="displayName" class="form-control" ng-model="credentials.displayName" placeholder="First Name" required>
-          <div ng-messages="userForm.displayName.$error" role="alert">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" class="form-control" ng-model="credentials.firstName" placeholder="First Name" required>
+          <div ng-messages="userForm.firstName.$error" role="alert">
             <p class="help-block error-text" ng-message="required">First name is required.</p>
           </div>
         <div class="form-group" show-errors>
-          <label for="studentlastName"></label>
-          <input type="text" id="studentlastName" name="studentlastName" class="form-control" ng-model="credentials.studentlastName" placeholder="Last Name" required>
-          <div ng-messages="userForm.studentlastName.$error" role="alert">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" class="form-control" ng-model="credentials.lastName" placeholder="Last Name" required>
+          <div ng-messages="userForm.lastName.$error" role="alert">
             <p class="help-block error-text" ng-message="required">Last name is required.</p>
           </div>
         </div>

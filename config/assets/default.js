@@ -4,8 +4,9 @@ module.exports = {
   client: {
     lib: {
       css: [
-        'public/lib/bootstrap/dist/css/bootstrap.css',
-        'public/lib/bootstrap/dist/css/bootstrap-theme.css'
+      'public/lib/theme/main.css'
+        // 'public/lib/bootstrap/dist/css/bootstrap.min.css',
+        // 'public/lib/bootstrap/dist/css/bootstrap-theme.min.css',
       ],
       js: [
         'public/lib/angular/angular.js',
@@ -21,6 +22,7 @@ module.exports = {
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },
     css: [
+
       'modules/*/client/css/*.css'
     ],
     less: [
